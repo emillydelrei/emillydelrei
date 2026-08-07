@@ -1,4 +1,47 @@
-# Olá, eu sou a Emilly Del Rei 👋
+<svg width="700" height="90" viewBox="0 0 700 90" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="50%" stop-color="#f472b6"/>
+      <stop offset="100%" stop-color="#facc15"/>
+    </linearGradient>
+    <clipPath id="reveal">
+      <rect x="0" y="0" height="90">
+        <animate attributeName="width" values="0;620;620" keyTimes="0;0.6;1" dur="5s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <!-- Frase revelada progressivamente -->
+  <text x="10" y="58" font-family="Segoe UI, Verdana, sans-serif" font-size="34" font-weight="700"
+        fill="url(#textGrad)" clip-path="url(#reveal)">
+    Olá, eu sou a Emilly Del Rei 👋
+  </text>
+
+  <!-- Varinha mágica se movendo -->
+  <g>
+    <animateTransform attributeName="transform" type="translate"
+      values="0,0;560,0;560,0" keyTimes="0;0.6;1" dur="5s" repeatCount="indefinite"/>
+    <text x="0" y="60" font-size="30">🪄</text>
+  </g>
+
+  <!-- Pozinho mágico -->
+  <text x="80" y="35" font-size="16">✨
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.055;0.085;0.115;1" dur="5s" repeatCount="indefinite"/>
+  </text>
+  <text x="180" y="45" font-size="14">✨
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.163;0.193;0.223;1" dur="5s" repeatCount="indefinite"/>
+  </text>
+  <text x="280" y="30" font-size="18">✨
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.27;0.3;0.33;1" dur="5s" repeatCount="indefinite"/>
+  </text>
+  <text x="380" y="48" font-size="15">✨
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.377;0.407;0.437;1" dur="5s" repeatCount="indefinite"/>
+  </text>
+  <text x="480" y="32" font-size="17">✨
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.484;0.514;0.544;1" dur="5s" repeatCount="indefinite"/>
+  </text>
+</svg>
 
 `Estudante de ADS`
 
