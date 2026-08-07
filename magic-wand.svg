@@ -1,0 +1,62 @@
+<svg width="700" height="90" viewBox="0 0 700 90" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="50%" stop-color="#f472b6"/>
+      <stop offset="100%" stop-color="#facc15"/>
+    </linearGradient>
+    <style>
+      .reveal-text {
+        animation: revealText 5s ease-in-out infinite;
+      }
+      @keyframes revealText {
+        0%   { clip-path: inset(0 100% 0 0); }
+        55%  { clip-path: inset(0 0% 0 0); }
+        100% { clip-path: inset(0 0% 0 0); }
+      }
+
+      .wand {
+        animation: moveWand 5s ease-in-out infinite;
+      }
+      @keyframes moveWand {
+        0%   { transform: translateX(0); }
+        55%  { transform: translateX(560px); }
+        100% { transform: translateX(560px); }
+      }
+
+      .spark {
+        opacity: 0;
+        animation: sparkle 5s ease-in-out infinite;
+      }
+      @keyframes sparkle {
+        0%   { opacity: 0; }
+        6%   { opacity: 1; }
+        14%  { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .s1 { animation-delay: 0.4s; }
+      .s2 { animation-delay: 0.88s; }
+      .s3 { animation-delay: 1.37s; }
+      .s4 { animation-delay: 1.87s; }
+      .s5 { animation-delay: 2.36s; }
+    </style>
+  </defs>
+
+  <!-- Frase revelada progressivamente -->
+  <text class="reveal-text" x="10" y="58" font-family="Segoe UI, Verdana, sans-serif" font-size="34" font-weight="700"
+        fill="url(#textGrad)">
+    Olá, eu sou a Emilly Del Rei 👋
+  </text>
+
+  <!-- Varinha mágica se movendo -->
+  <g class="wand">
+    <text x="0" y="60" font-size="30">🪄</text>
+  </g>
+
+  <!-- Pozinho mágico -->
+  <text class="spark s1" x="80" y="35" font-size="16">✨</text>
+  <text class="spark s2" x="180" y="45" font-size="14">✨</text>
+  <text class="spark s3" x="280" y="30" font-size="18">✨</text>
+  <text class="spark s4" x="380" y="48" font-size="15">✨</text>
+  <text class="spark s5" x="480" y="32" font-size="17">✨</text>
+</svg>
