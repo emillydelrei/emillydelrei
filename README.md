@@ -5,42 +5,60 @@
       <stop offset="50%" stop-color="#f472b6"/>
       <stop offset="100%" stop-color="#facc15"/>
     </linearGradient>
-    <clipPath id="reveal">
-      <rect x="0" y="0" height="90">
-        <animate attributeName="width" values="0;620;620" keyTimes="0;0.6;1" dur="5s" repeatCount="indefinite"/>
-      </rect>
-    </clipPath>
+    <style>
+      .reveal-text {
+        animation: revealText 5s ease-in-out infinite;
+      }
+      @keyframes revealText {
+        0%   { clip-path: inset(0 100% 0 0); }
+        55%  { clip-path: inset(0 0% 0 0); }
+        100% { clip-path: inset(0 0% 0 0); }
+      }
+
+      .wand {
+        animation: moveWand 5s ease-in-out infinite;
+      }
+      @keyframes moveWand {
+        0%   { transform: translateX(0); }
+        55%  { transform: translateX(560px); }
+        100% { transform: translateX(560px); }
+      }
+
+      .spark {
+        opacity: 0;
+        animation: sparkle 5s ease-in-out infinite;
+      }
+      @keyframes sparkle {
+        0%   { opacity: 0; }
+        6%   { opacity: 1; }
+        14%  { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .s1 { animation-delay: 0.4s; }
+      .s2 { animation-delay: 0.88s; }
+      .s3 { animation-delay: 1.37s; }
+      .s4 { animation-delay: 1.87s; }
+      .s5 { animation-delay: 2.36s; }
+    </style>
   </defs>
 
   <!-- Frase revelada progressivamente -->
-  <text x="10" y="58" font-family="Segoe UI, Verdana, sans-serif" font-size="34" font-weight="700"
-        fill="url(#textGrad)" clip-path="url(#reveal)">
+  <text class="reveal-text" x="10" y="58" font-family="Segoe UI, Verdana, sans-serif" font-size="34" font-weight="700"
+        fill="url(#textGrad)">
     Olá, eu sou a Emilly Del Rei 👋
   </text>
 
   <!-- Varinha mágica se movendo -->
-  <g>
-    <animateTransform attributeName="transform" type="translate"
-      values="0,0;560,0;560,0" keyTimes="0;0.6;1" dur="5s" repeatCount="indefinite"/>
+  <g class="wand">
     <text x="0" y="60" font-size="30">🪄</text>
   </g>
 
   <!-- Pozinho mágico -->
-  <text x="80" y="35" font-size="16">✨
-    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.055;0.085;0.115;1" dur="5s" repeatCount="indefinite"/>
-  </text>
-  <text x="180" y="45" font-size="14">✨
-    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.163;0.193;0.223;1" dur="5s" repeatCount="indefinite"/>
-  </text>
-  <text x="280" y="30" font-size="18">✨
-    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.27;0.3;0.33;1" dur="5s" repeatCount="indefinite"/>
-  </text>
-  <text x="380" y="48" font-size="15">✨
-    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.377;0.407;0.437;1" dur="5s" repeatCount="indefinite"/>
-  </text>
-  <text x="480" y="32" font-size="17">✨
-    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.484;0.514;0.544;1" dur="5s" repeatCount="indefinite"/>
-  </text>
+  <text class="spark s1" x="80" y="35" font-size="16">✨</text>
+  <text class="spark s2" x="180" y="45" font-size="14">✨</text>
+  <text class="spark s3" x="280" y="30" font-size="18">✨</text>
+  <text class="spark s4" x="380" y="48" font-size="15">✨</text>
+  <text class="spark s5" x="480" y="32" font-size="17">✨</text>
 </svg>
 
 `Estudante de ADS`
