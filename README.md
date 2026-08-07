@@ -25,5 +25,4 @@ Estudante de Análise e Desenvolvimento de Sistemas, em transição de carreira 
 ### 📫 Contato
 
 <p align="left">
-  <a href="hwww.linkedin.com/in/emilly-del-rei-da-costa-de-godoi-3a952a23b" target="_blank"><img src="https://skillicons.dev/icons?i=linkedin" /></a>
-</p>
+<a href="https://www.linkedin.com/in/emilly-del-rei-da-costa-de-godoi-3a952a23b" target="_blank"><img src="https://skillicons.dev/icons?i=linkedin" /></a>
