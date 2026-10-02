@@ -2,7 +2,7 @@
  
 `Estudante de ADS`
 
-Estudante de Análise e Desenvolvimento de Sistemas, em transição de carreira para o desenvolvimento backend. Tenho base sólida em lógica de programação e Programação Orientada a Objetos, com foco em **Java** e **Spring Boot**, além de experiência com **Python**, **SQL** (PostgreSQL/MySQL) e **NoSQL**. Gosto de aprender construindo projetos práticos e me aprofundando em boas práticas de código, versionamento e resolução de problemas reais.
+Estudante de Análise e Desenvolvimento de Sistemas, com foco em desenvolvimento backend. Tenho base sólida em lógica de programação e Programação Orientada a Objetos, com foco em **Java** e **Spring Boot**, além de experiência com **Python**, **SQL** (PostgreSQL/MySQL) e **NoSQL**. Gosto de aprender construindo projetos práticos e me aprofundando em boas práticas de código, versionamento e resolução de problemas reais.
 
 ---
 
